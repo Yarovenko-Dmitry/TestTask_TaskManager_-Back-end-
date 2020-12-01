@@ -16,4 +16,3 @@ module.exports = connectDB = async () => {
     process.exit(1)
   }
 }
-// mongodb+srv://test1:test123test@cluster0.erpqz.mongodb.net/<dbname>?retryWrites=true&w=majority

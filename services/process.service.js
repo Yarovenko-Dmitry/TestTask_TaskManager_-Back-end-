@@ -4,8 +4,6 @@ const {randomString} = require('../utils/utils');
 const {addJobAnyNumber} = require('./job.service');
 const {deleteJob} = require('./job.service');
 
-
-
 const getProcess = async () => {
   try {
     return await ProcessService.find({})
@@ -42,6 +40,5 @@ const deleteProcess = async (processId) => {
     throw new Error(e)
   }
 }
-//
 
 module.exports = {getProcess, addProcess, deleteProcess}

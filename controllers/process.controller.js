@@ -10,9 +10,7 @@ router.get('/', async (req, res) => {
     console.log(err)
     res.status(500).json({message: 'Что-то пошло не так, попробуйте снова'});
   }
-
 })
-
 
 router.post('/process/', async (req, res) => {
   try {
@@ -22,7 +20,6 @@ router.post('/process/', async (req, res) => {
     console.log(err)
     res.status(500).json({message: 'Что-то пошло не так, попробуйте снова'});
   }
-
 })
 
 router.delete('/process/:id', async (req, res) => {
@@ -35,6 +32,5 @@ router.delete('/process/:id', async (req, res) => {
     res.status(500).json({message: 'Что-то пошло не так, попробуйте снова'});
   }
 })
-
 
 module.exports = router

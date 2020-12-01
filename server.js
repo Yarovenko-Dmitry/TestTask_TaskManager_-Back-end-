@@ -30,8 +30,5 @@ const start = async () => {
   }
 }
 
-
 start()
 module.exports.app = app
-
-// http://localhost:4000/processes/process
